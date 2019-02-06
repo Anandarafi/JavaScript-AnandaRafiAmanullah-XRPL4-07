@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Penilian Nilai </title>
+    </head>
+    <body>
+    <script LANGUAGE="Javascript">
+    function test(){
+        var a=document.kirim.T1.value
+        if (a >= 93 )
+        { document.kirim.T2.value="A"}
+        else if (a >= 83 && a <= 92)
+        { document.kirim.T2.value="B"}
+        else if (a >= 75 && a <= 82)
+        { document.kirim.T2.value="C"}
+        else if (a >= 50 && a <= 74)
+        { document.kirim.T2.value="D"}
+        else
+        { document.kirim.T2.value="E"}
+    }
+        </script>
+
+            <h1 align="center">Nilai UAS</h1>
+            <hr>
+            <form method="Post" name="kirim">
+                <p align="center">Nilai Anda <input type="text" name="T1" size="20"><br></p>
+                <p align="center"><input type="button" value="Konversi Nilai Anda untuk melihat Predikat Nilai Anda" name="B1" onclick=test()>
+                </p>
+                <p align="center">Predikat <input type="text" name="T2" size="20" disabled="true"></p>
+            </form>
+        </body>
+</html>
